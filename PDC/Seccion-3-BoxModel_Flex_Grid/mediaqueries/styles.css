@@ -1,0 +1,79 @@
+.clase{
+    font-size: 20px;
+    color: blue;
+}
+
+@media(max-width: 767px){
+    .clase{
+        font-size: 50px;
+        color: blueviolet;
+    }
+}
+
+@media(min-width: 768px){
+    .clase{
+        font-size: 80px;
+        color: green;
+    }
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px dotted red;
+
+}
+
+.card-container{
+    margin: 5px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    border: 4px dotted teal;
+    border-radius: 5%;
+    padding: 5px;
+    height: 400px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.image-container{
+    border: 4px dotted teal;
+    border-radius: 5%;
+    width: 80%;
+    height: 60%;
+   
+}
+.text{
+    font-size: 32px;
+    width: 80%;
+    text-align: center;
+
+
+}
+/*menos de 768 es lo que esta arriba y aplica para moviles*/
+/*mas de 768 aplica para tablets dispositivos medianos*/
+/*mas de 1024 son compus/portatiles/notebook*/
+/*apartir de las pantallas que tengan un ancho mayor a los 768px */
+@media(min-width: 768px){
+    .card-container{
+        width: 45%;
+        display: flex;
+          
+           
+    }
+}
+
+@media(min-width: 1024px){
+    .card-container{
+        width: 30%;
+        display: flex;
+        
+                
+    }
+}

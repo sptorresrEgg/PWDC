@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat( 12 , 1fr );
+    gap: 10px;
+}
+
+.header{
+    background-color: red;
+    height: 100px;
+    grid-column: 1 / 13;
+    grid-row: 1;
+}
+
+.izquierda{
+    background-color: cadetblue;
+    grid-column: 1 / 4;
+    grid-row: 2;
+    height: 1200px;
+    border-radius: 20px;
+}
+
+.main{
+    background-color: lightcoral;
+    grid-column: 4 / 10;
+    grid-row: 2; 
+    border-radius: 20px;
+}
+
+.derecha{
+    background-color: lightgreen;
+    grid-column: 10 / 13;
+    grid-row: 2; 
+    border-radius: 20px;
+}
+
+.footer{
+    background-color: black;
+    grid-column: 1 / 13;
+    grid-row: 3; 
+    height: 300px;
+}
+
+

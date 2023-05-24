@@ -1,0 +1,35 @@
+div{
+    border: solid red;
+    margin: 20px;
+}
+body>div:nth-child(1){
+    display: none; /*hace desaparecer todo */
+
+}
+body>div:nth-child(2){
+    display: block; /*respeta todo el ancho y respeta la altura*/
+
+}
+body>div:nth-child(3){
+    display: inline;/*desapare margenes inferior y superior, y no respeta altura*/
+
+}
+
+body>div:nth-child(4){
+    display: inline-block;/*respeta margenes pero se ven en bloque*/
+
+}
+body>div:nth-child(5){
+    display: inherit;/*hereda del padre para el ejemplo era del body que es block*/
+
+}
+body>div:nth-child(6){
+    display: flex;/*trabaja en dos ejes, row y column y coloca los elementos uno al lado del otro*/
+    
+
+}
+body>div:nth-child(7){
+    display: grid;/*trabaja en dos ejes, row y column y coloca los elementos uno al lado del otro*/
+    
+
+}

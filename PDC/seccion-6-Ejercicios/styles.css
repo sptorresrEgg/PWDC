@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.externo {
+    background-color: RED;
+}
+
+.interno {
+    background-color: blue;
+    margin: 30px;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+}
+
+.medio {
+    background-color: yellow;
+    height: 100%;
+}

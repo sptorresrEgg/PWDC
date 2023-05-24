@@ -1,0 +1,51 @@
+body{
+    background-color: #fecdd3;
+}
+.container{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+.myForm{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+h1{
+    color:#9f1239;
+    margin: 30px;
+    text-align: center;
+}
+
+h2{
+    color:#e11d48;
+    font-weight:bolder;
+    margin: 20px;
+    padding: 10px;
+}
+p{
+    font-family:monospace;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+    text-align: justify;
+}
+
+
+@media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      
+    }
+  }

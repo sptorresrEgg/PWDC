@@ -1,0 +1,40 @@
+body>div{
+    height: 400px;
+}
+div{
+    border: solid 2px;
+    margin: 30px;
+}
+body>div:nth-child(1)>div {
+    border-color: green;
+    left: 30px;
+}
+body>div:nth-child(2)>div {
+    border-color: blue;
+    left: 150px;
+}
+
+body>div>div:nth-child(1){
+    position: static; /*sequedo en su lugar*/
+
+}
+body>div>div:nth-child(2){
+    position: relative;/*alineo a derecha y se bajo, conserva su espacio original pero se mueve*/
+    top: 80px;
+
+}
+body>div>div:nth-child(3){
+    position: absolute;/*menor tamaño de ancho y se subio a la pocision de relative*/
+    top: 90px;
+
+}
+body>div>div:nth-child(5){
+    position: fixed;/*se ahica alinea izquierda y se queda quieto cuando hago scroll hacia abajo*/
+    top: 120px;
+
+}
+body>div>div:nth-child(6){
+    position: sticky;/*como fixed pero solo se mueve con respecto al padre y hasta el top que le demos*/
+    top: 200px;
+
+}
