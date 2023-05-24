@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+      padding: 0
+  }
+  
+  body{
+      
+      background-color: #fecdd3;
+    
+  
+  }
+  body ul{
+    margin: 0;
+      padding: 0;
+  }
+  
+  .container{
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+  }
+  .container nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: #9f1239;
+    margin: auto;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  li>a{
+    padding: 8px 24px;
+  }
+  li>a:hover{
+    background-color: #fecdd3;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    color: white;
+    text-decoration:none;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  .button-menu-toggle {
+    display: none;
+  }
+  h1{
+    text-align: center;
+    /*margin: 15px;*/
+    padding: 20px;
+    text-transform: uppercase;
+    color: #9f1239;
+}
+
+
+  .form-group {
+ /* border: 1px solid tomato;  */
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+label, input {
+    vertical-align: middle; /* solo funciona para elementos in line, y para que funcione todos los elementeos line deben estar alineados verticalmente*/
+}
+
+label, input [type="text"], input[type="email"],fieldset{
+    /* otra forma de hacerlo es negando input:not([type="radio"], [type=checkbox]*/
+    width: 100%;
+    
+    
+}
+#name{
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical; /* bloquea el texarea para no cambiar tamaño*/
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase ;
+    font-size: 14px;
+    color:#9f1239;
+    margin-bottom: 10px;
+   
+}
+fieldset{
+    border-style: none;
+}
+
+input[type="text"], input[type="email"] , textarea  {
+    background: white ;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+
+}
+
+button {
+    padding: 16px 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px #14532d;
+    background:#9f1239;
+    color:white;
+    /*text-shadow: -1px -1px 0 #dcfce7; sombra al texto del boton, lo comentareo por que no me gusta como se ve*/
+    text-shadow: -1px -1px 0 rgba(255,255,255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px   rgba(0,0,0, 0.5);
+    cursor: pointer; /* se pone como la manita del cursos como que hace click*/
+
+}
+
+button:hover {
+    background: #fecdd3 ;
+}
+
+button:active {
+    background: #fecdd3;
+    /* box-shadow: none; quita la sombra para efecto visual de que se hunde*/
+    box-shadow: -1px -1px 0   rgba(0,0,0, 0.5);
+}
+form {
+    accent-color:#9f1239 ;
+}
+input:focus-visible,
+textarea:focus-visible{
+    border: 1px solid #9f1239 ;
+    outline: 2px solid #9f1239;
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  * {
+    
+    box-sizing: border-box;
+    margin: 0;
+      padding: 0
+  }
+
+  .column {
+    flex: 100%;
+  }  
+  .nav-links {
+    display: none;
+  }
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border:none;
+    border-radius: 50px;
+    padding: 0 20px;
+    
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }  
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(159,18,57,0.95);
+    width: 95%;
+    height: 100%;
+    margin: 0px 20px 0px 20px;
+    top:70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap:70px;
+    font-size: 40px;
+  }
+}
