@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+    padding: 0
+}
+
+body{
+    
+    background-color: #fecdd3;
+  
+
+}
+body ul{
+  margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    
+    
+}
+.container nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: #9f1239;
+  margin: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+li>a{
+  padding: 8px 24px;
+}
+li>a:hover{
+  background-color: #fecdd3;
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration:none;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.button-menu-toggle {
+  display: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+.myForm{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+h1{
+    color:#9f1239;
+    margin: 30px;
+    text-align: center;
+}
+
+h2{
+    color:#e11d48;
+    font-weight:bolder;
+    margin: 20px;
+    padding: 10px;
+}
+p{
+    font-family:monospace;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+    text-align: justify;
+}
+
+
+
+  @media (max-width: 768px) {
+    * {
+      
+      box-sizing: border-box;
+      margin: 0;
+        padding: 0
+    }
+  
+    .column {
+      flex: 100%;
+    }  
+    .nav-links {
+      display: none;
+    }
+    .button-menu-toggle {
+      display: block;
+      background-color: white;
+      border:none;
+      border-radius: 50px;
+      padding: 0 20px;
+      
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }  
+    .nav-links.nav-links-responsive {
+      position: absolute;
+      display: flex;
+      background-color: rgba(159,18,57,0.95);
+      width: 95%;
+      height: 100%;
+      margin: 0px 20px 0px 20px;
+      top:70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+  
+  
+    
+   
+
+  }
+  }
