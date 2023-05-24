@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" type="text/css" href="styles_contacto.css">
+    </head>
+    <body>
+        <div class="container">
+            <!--Barra de navegacion -->
+            <nav class="navbar">
+                <a href="#" class="brand">Mi página web</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inincio</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contactanos</a></li>
+                </ul>
+                <button class="button-menu-toggle">Menu</button>
+              </nav>
+              
+            
+             <!--content -->  
+
+            <h1>Contacto</h1>
+            <div class="row">
+                <form action="/server" method="get">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email"  name="email" type="email" placeholder="Ingrese su correo electronico" required>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>Presupuesto</legend>
+                                <input id="10000" name="presupuesto" type="radio" value="10000" ><label for="10000">$10000</label>
+                                <input id="5000" name="presupuesto" type="radio" value="5000" ><label for="5000">$5000</label>
+                                <input id="1000" name="presupuesto" type="radio" value="1000" ><label for="1000">$1000</label>
+                                
+                        </fieldset>
+                        <div class="help">Este presupuesto es la base no el total</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo">Tipo de Proyecto</label>
+                        <select id="tipo" name="tipo">
+                            <option disabled selected value="">Seleccione uno</option>
+                            <option value="PWeb">Sitios Web</option>
+                            <option value="Appweb">Aplicacion Web</option>
+                            <option value="Appmovil">Aplicacion Movil</option>
+                            <option value="Diseno">Diseño</option>
+                        </select>
+                    </div>
+                        <div class="form-group">
+                            <label for="descripcion" required>Descripcion</label>
+                            <textarea id="descripcion" name="descripcion" rows="5" ></textarea>
+                            <div class="help">Escribe una descripcion del proyecto en al menos 300 palabras</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="terminos">
+                                <input id="terminos" type="checkbox" name="terminos" required>
+                                <span>Acepto los terminos y condiciones</span>
+                            </label>
+        
+                        </div>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        <form  id="myForm">
+            
+        </form>    
+       
+        <script src="script.js"></script>
+
+    </body>
+</html>
