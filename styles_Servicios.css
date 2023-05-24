@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+      padding: 0
+  }
+  
+  body{
+      
+      background-color: #fecdd3;
+    
+  
+  }
+  body ul{
+    margin: 0;
+      padding: 0;
+  }
+  
+  .container{
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      
+      
+  }
+  .container nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: #9f1239;
+    margin: auto;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  li>a{
+    padding: 8px 24px;
+  }
+  li>a:hover{
+    background-color: #fecdd3;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    color: white;
+    text-decoration:none;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  .button-menu-toggle {
+    display: none;
+  }
+
+  .media{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.media p{
+    margin: 5px;
+}
+.media img{
+    margin: 15px;
+}
+h1{
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #9f1239;
+}
+h2{
+    text-align: left;
+    margin: 15px;
+    padding: 20px;
+    color: #9f1239;  
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    * {
+      
+      box-sizing: border-box;
+      margin: 0;
+        padding: 0
+    }
+  
+    .column {
+      flex: 100%;
+    }  
+    .nav-links {
+      display: none;
+    }
+    .button-menu-toggle {
+      display: block;
+      background-color: white;
+      border:none;
+      border-radius: 50px;
+      padding: 0 20px;
+      
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }  
+    .nav-links.nav-links-responsive {
+      position: absolute;
+      display: flex;
+      background-color: rgba(159,18,57,0.95);
+      width: 95%;
+      height: 100%;
+      margin: 0px 20px 0px 20px;
+      top:70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+  
+  
+    
+   
+  
+  }
+  }
+
+
+
+
+  
